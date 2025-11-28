@@ -14,6 +14,7 @@ import RaportInput from './pages/raport/RaportInput';
 import LegerNilai from './pages/raport/LegerNilai';
 import RaportPrint from './pages/raport/RaportPrint';
 import Dashboard from './pages/dashboard/Dashboard';
+import UserManagement from './pages/users/UserManagement';
 import { Toaster } from './components/ui/toaster';
 
 const queryClient = new QueryClient();
@@ -47,6 +48,7 @@ function App() {
             <Route path="/print/:id" element={<RaportPrint />} />
             <Route element={<Layout />}>
               <Route path="/" element={<Dashboard />} />
+              <Route path="/users" element={<UserManagement />} />
               <Route path="/students" element={<Students />} />
               <Route path="/academic" element={<Academic />} />
               <Route path="/surah" element={<SurahManagement />} />
